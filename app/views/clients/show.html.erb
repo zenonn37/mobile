@@ -1,0 +1,31 @@
+<div data-role="header">
+<h1>Client Details</h1>
+
+</div>
+
+
+<div data-role="content">
+
+	<ul data-role="listview" data-inset="true" data-theme="c">
+
+		
+         <li data-role="list-divider" data-divider-theme="d">Name</li>
+		<li><%=@clients.name%><p class="ui-li-aside"><%=@clients.active%></p></li>
+		 <li data-role="list-divider">Email</li>
+			<li><%=@clients.email%></li>
+			 <li data-role="list-divider">Phone</li>
+				<li><%=@clients.phone%>
+
+                  <span class="ui-li-count">1 Number</span>
+				</li>
+
+   
+       
+
+	</ul>
+
+</div>
+
+
+<div data-role="footer" data-position="fixed">Footer</div>
+

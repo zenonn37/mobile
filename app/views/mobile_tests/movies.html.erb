@@ -1,0 +1,26 @@
+<div data-role="header" data-theme="b" data-position="fixed">
+  <h1>Movies</h1>
+  <div class="segmented-control ui-bar-d">
+    <div data-role="controlgroup" data-type="horizontal">
+      <a href="#" data-role="button" class="ui-control-active">
+         In Theatres
+      </a>
+      <a href="#" data-role="button" class="ui-control-inactive">
+        Coming Soon
+      </a>
+      <a href="#" data-role="button" class="ui-control-inactive">
+        Top Rated
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .segmented-control { text-align:center;}
+  .segmented-control .ui-controlgroup { margin: 0.2em; }
+  .ui-control-active, .ui-control-inactive {
+      border-style: solid; border-color: gray; }
+  .ui-control-active { background: #BBB; }
+  .ui-control-inactive { background: #DDD; }
+</style>

@@ -1,0 +1,61 @@
+<div data-role="header">
+	<h1>Add Client</h1>
+
+
+</div>
+
+
+<div data-role="content">
+
+	<%=form_for(@clients) do |f|%>
+
+	<label for="name">Name:</label>
+    
+     <input type="text" name="client[name]" id="name" placeholder="Enter Name" />
+     <label for="email">Email:</label>
+    
+     <input type="text" name="client[email]" id="email" placeholder="Enter Email" />
+     <label for="phone">Phone:</label>
+    
+     <input type="tel" name="client[phone]" id="phone" placeholder="Enter Phone" />
+     <select name="client[active] data-native-menu="false" data-theme="a">
+     <option value="null" data-placeholder="true">s..</option>
+      <option value="true" data-placeholder="true">Client Active</option>
+       <option value="false" data-placeholder="true">Client Not-Active</option>
+     </select>
+    
+    
+
+     <%=f.button :submit%>
+
+	<%end%>
+
+<fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Genre:</legend>
+        <input type="checkbox" name="genre" id="c1" />
+       <label for="c1" data-theme=”c”>Action</label>
+
+       <input type="checkbox" name="genre" id="c2" />
+       <label for="c2" data-theme=”c”>Comedy</label>
+
+       <input type="checkbox" name="genre" id="c3" />
+        <label for="c3" data-theme=”c”>Drama</label>
+</fieldset>
+
+
+<input type="time" name="time" />
+<input type="datetime-local" name="dtl" />
+<input type="date" name="date" />
+<input type="month" name="month" />
+<input type="week" name="week" />
+<input type="datetime" name="dt" />
+
+
+
+
+</div>
+
+
+<div data-role="footer" data-position="fixed">
+Footer
+</div>
